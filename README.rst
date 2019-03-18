@@ -47,7 +47,9 @@ Documentation
 
 The full documentation can be read at https://pydxl.readthedocs.io.
 
-Example code::
+Example code:
+
+.. code:: python
 
     import time
 
