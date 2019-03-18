@@ -40,17 +40,6 @@ Post-creation
 
     * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
 
-  * code climate
-
-    * dans les settings du projet, configurer pour les commentaires de pull requests
-    * pour le test coverage, trouver l'ID à coller dans la config de travis
-
-
-  * coveralls
-
-    * changer le repo_token dans .coveralls.yml
-    * changer la conf de tox pour utiliser coveralls (cf simplelogging ou python dev tools)
-
   * pepy.tech
   * dependabot
   * readme.rst
