@@ -41,12 +41,6 @@ Post-creation
     * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
 
   * pepy.tech
-  * dependabot
-  * readme.rst
-
-    * mettre les bons badges
-    
-  * mettre dans github les tags de projets
 
 Documentation
 -------------
