@@ -37,26 +37,40 @@ Post-creation
 -------------
 
   * créer un environnement virtuel et installer les packages
+
     * python3 -m venv venv
     * source ven/bin/activate
     * *C'est important pour la suite*
+
   * read the docs
+
     * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
+
   * PyPI
+
     * attention au nommage de version
     * faut juste faire un upload : make release
+
   * code climate
+
     * dans les settings du projet, configurer pour les commentaires de pull requests
     * pour le test coverage, trouver l'ID à coller dans la config de travis
+
   * travis
+
     * pour avoir le code pour le badge, il faut cliquer sur le badge dans le dashboard
+
   * coveralls
+
     * changer le repo_token dans .coveralls.yml
     * changer la conf de tox pour utiliser coveralls (cf simplelogging ou python dev tools)
+
   * pepy.tech
   * dependabot
   * readme.rst
+
     * mettre les bons badges
+    
   * mettre dans github les tags de projets
 
 Documentation
