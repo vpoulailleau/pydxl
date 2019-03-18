@@ -1,6 +1,7 @@
 import time
 
 import serial
+
 from pydxl import DynamixelCommunicationException, DynamixelFailedOpeningPort
 
 
@@ -70,9 +71,10 @@ class PortHandler:
 
     @staticmethod
     def _time():
+        """Return time in milliseconds."""
         return round(time.time() * 1_000_000_000) / 1_000_000.0
 
     def set_timeout_for_length(self, length):
-        tx_time_per_byte = (1000.0 / self.baudrate) * 10.0
+        tx_time_per_byte = (1000.0 / self.baudrate) * 10000.0
         self.packet_timeout = tx_time_per_byte * length + 34.0
         self.packet_start_time = self._time()

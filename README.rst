@@ -2,7 +2,7 @@
 Python Dynamixel
 ================
 
-Python package to use Dynamixel servos through a serial interface.
+Python package to use Dynamixel servos through a serial interface (unofficial, easier SDK).
 
 .. image:: https://img.shields.io/pypi/v/pydxl.svg
         :target: https://pypi.python.org/pypi/pydxl
@@ -65,6 +65,7 @@ Example code:
 
     servo.torque_enable = True
     servo.goal_position = 2000
+    print(servo.goal_position)
     time.sleep(3)
     servo.goal_position = 1500
     time.sleep(3)
@@ -75,7 +76,16 @@ Example code:
 Features
 --------
 
-* TODO
+* Use protocol 1.0 through a serial link, known to work with:
+
+  * U2D2
+
+* Support servos:
+
+  * MX-28
+
+* TODO: implement protocol 2.0
+* TODO: add more servo types
 
 License
 -------

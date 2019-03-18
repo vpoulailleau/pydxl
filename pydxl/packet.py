@@ -18,8 +18,9 @@ class Packet:
     def from_data(cls, data):
         packet = cls(len(data))
         packet.data = data
-        if not packet._check_checksum():
-            raise DynamixelMalFormedPacket("Invalid checksum")
+        if len(data) == packet.total_length:
+            if not packet._check_checksum():
+                raise DynamixelMalFormedPacket("Invalid checksum")
         return packet
 
     def __repr__(self):
@@ -71,6 +72,14 @@ class Packet:
     @parameter0.setter
     def parameter0(self, value):
         self.data[5] = value
+
+    @property
+    def parameter1(self):
+        return self.data[6]
+
+    @parameter1.setter
+    def parameter1(self, value):
+        self.data[6] = value
 
     @property
     def payload(self):

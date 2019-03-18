@@ -26,3 +26,6 @@ class SerialLink:
 
     def write_bytes(self, identifier, address, data, size):
         self.packet_handler.write_bytes(identifier, address, data, size)
+
+    def read_bytes(self, identifier, address, size):
+        return self.packet_handler.read_bytes(identifier, address, size)

@@ -11,6 +11,7 @@ elbow = Mx28(identifier=3, serial_link=link)
 
 shoulder1.ping()
 shoulder1.led = True
+print(shoulder1.led)
 
 shoulder2.ping()
 shoulder2.led = True
@@ -26,6 +27,7 @@ elbow.torque_enable = True
 shoulder1.goal_position = 2000
 shoulder2.goal_position = 2500
 elbow.goal_position = 3000
+print(shoulder1.goal_position)
 time.sleep(3)
 
 shoulder1.goal_position = 1500

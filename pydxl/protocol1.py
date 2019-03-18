@@ -58,10 +58,10 @@ class PacketHandler:
 
     def wait_ack(self, identifier):
         while True:
-            self.port.set_timeout_for_length(6)
+            self.port.set_timeout_for_length(8)
             response = self.read()
             if identifier == response.identifier:
-                break
+                return response
 
     def write_bytes(self, identifier, address, data, size):
         data = int(data)
@@ -86,6 +86,27 @@ class PacketHandler:
         packet.payload = data_write
         self.write(packet)
         self.wait_ack(identifier)
+
+    def read_bytes(self, identifier, address, size):
+        packet = Packet(length=8)
+        packet.identifier = identifier
+        packet.instruction = 2
+        packet.parameter0 = address
+        packet.parameter1 = size
+        self.write(packet)
+        response = self.wait_ack(identifier)
+        if size == 1:
+            data = int(response.data[5])
+        elif size == 2:
+            data = int(response.data[5]) + (int(response.data[6]) << 8)
+        elif size == 4:
+            data = (
+                int(response.data[5])
+                + (int(response.data[6]) << 8)
+                + (int(response.data[7]) << 16)
+                + (int(response.data[8]) << 24)
+            )
+        return data
 
     def ping(self, identifier):
         if identifier >= BROADCAST_ID:
