@@ -1,7 +1,7 @@
 # Config file for automatic testing at travis-ci.org
 env:
   global:
-    - CC_TEST_REPORTER_ID=REPLACE_ME
+    - CC_TEST_REPORTER_ID=63d51cb282ef8db2bd9bf4a73fd6e6c861a1e88da83eefcf3229f765d739fc97
 
 language: python
 matrix:
