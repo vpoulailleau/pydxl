@@ -58,6 +58,7 @@ Example code:
     link = SerialLink(
         device="/dev/ttyUSB0", baudrate=1_000_000, protocol_version=1.0
     )
+
     servo = Mx28(identifier=1, serial_link=link)
     servo.ping()
     servo.led = True
