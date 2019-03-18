@@ -2,7 +2,7 @@
 
 import pytest
 
-from pydxl import pydxl
+from pydxl import Mx28, SerialLink
 
 
 @pytest.fixture
