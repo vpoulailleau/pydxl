@@ -25,7 +25,7 @@ Python package to use Dynamixel servos through a serial interface.
         :target: https://coveralls.io/github/vpoulailleau/pydxl?branch=HEAD
         :alt: Coverage Status
 
-.. image:: https://api.codeclimate.com/v1/badges/REPLACEME/maintainability
+.. image:: https://api.codeclimate.com/v1/badges/23eb1c39f33578ee3304/maintainability
         :target: https://codeclimate.com/github/vpoulailleau/pydxl/maintainability
         :alt: Maintainability
 
@@ -36,29 +36,15 @@ Python package to use Dynamixel servos through a serial interface.
 Post-creation
 -------------
 
-  * créer un environnement virtuel et installer les packages
-
-    * python3 -m venv venv
-    * source ven/bin/activate
-    * *C'est important pour la suite*
-
   * read the docs
 
     * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
-
-  * PyPI
-
-    * attention au nommage de version
-    * faut juste faire un upload : make release
 
   * code climate
 
     * dans les settings du projet, configurer pour les commentaires de pull requests
     * pour le test coverage, trouver l'ID à coller dans la config de travis
 
-  * travis
-
-    * pour avoir le code pour le badge, il faut cliquer sur le badge dans le dashboard
 
   * coveralls
 
