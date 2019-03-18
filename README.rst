@@ -47,6 +47,28 @@ Documentation
 
 The full documentation can be read at https://pydxl.readthedocs.io.
 
+Example code::
+
+    import time
+
+    from pydxl import Mx28, SerialLink
+
+    link = SerialLink(
+        device="/dev/ttyUSB0", baudrate=1_000_000, protocol_version=1.0
+    )
+    servo = Mx28(identifier=1, serial_link=link)
+    servo.ping()
+    servo.led = True
+
+    servo.torque_enable = True
+    servo.goal_position = 2000
+    time.sleep(3)
+    servo.goal_position = 1500
+    time.sleep(3)
+    servo.torque_enable = False
+
+    link.close()
+
 Features
 --------
 
