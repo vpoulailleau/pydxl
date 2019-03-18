@@ -2,7 +2,7 @@
 
 __author__ = """Vincent Poulailleau"""
 __email__ = "vpoulailleau@gmail.com"
-__version__ = "__version__ = "2019.03.18""
+__version__ = "2019.03.18"
 
 from pydxl.exceptions import (
     DynamixelCommunicationException,
