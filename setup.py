@@ -42,6 +42,6 @@ setup(
     test_suite="tests",
     tests_require=test_requirements,
     url="https://github.com/vpoulailleau/pydxl",
-    version="2019.03.18",
+    version="2019.03.19",
     zip_safe=False,
 )
