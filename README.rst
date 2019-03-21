@@ -33,15 +33,6 @@ Python package to use Dynamixel servos through a serial interface (unofficial, e
         :target: https://bettercodehub.com/results/vpoulailleau/pydxl
         :alt: Maintainability
 
-Post-creation
--------------
-
-  * read the docs
-
-    * ça a buggé, j'ai créé le projet à la main, et ensuite tout a fonctionné
-
-  * pepy.tech
-
 Documentation
 -------------
 
