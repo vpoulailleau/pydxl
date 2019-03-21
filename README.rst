@@ -79,6 +79,8 @@ Features
 * Use protocol 1.0 through a serial link, known to work with:
 
   * U2D2
+  * USB2Dynamixel
+  * DARwIn-OP (after having installed a more recent Python, tested with Python 3.7.2)
 
 * Support servos:
 
