@@ -13,7 +13,7 @@ with open("HISTORY.rst") as history_file:
 
 requirements = ["pyserial==3.4"]
 
-setup_requirements = ["pytest-runner==5.1"]
+setup_requirements = ["pytest-runner==5.2"]
 
 test_requirements = ["pytest==5.2.2"]
 
