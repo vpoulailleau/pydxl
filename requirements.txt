@@ -1,4 +1,4 @@
 python-dev-tools==2019.10.28
 watchdog==0.9.0
-flake8==3.7.8
+flake8==3.7.9
 pyserial==3.4
