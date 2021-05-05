@@ -15,7 +15,7 @@ requirements = ["pyserial==3.4"]
 
 setup_requirements = ["pytest-runner==5.2"]
 
-test_requirements = ["pytest==5.3.5"]
+test_requirements = ["pytest==6.2.4"]
 
 setup(
     author="Vincent Poulailleau",
